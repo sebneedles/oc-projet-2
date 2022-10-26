@@ -1,0 +1,707 @@
+/* ------------------------
+Body
+------------------------ */
+body{
+    font-family: "Raleway", sans-serif;
+    margin: auto;
+}
+
+/* ------------------------
+Header
+------------------------ */
+header{
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+/* ------------------------
+Navigation
+------------------------ */
+nav{
+    width: 300px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    margin-block-end: 15px;
+    padding-inline-start: 0px;
+}
+
+nav li {
+    width: 50%;
+    text-align: center;
+}
+
+nav a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding: 41px 0 3px 0;
+    width: 100%;
+    display: block;
+    border-top: 3px solid transparent;
+    transition: 300ms;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    transition: 300ms;
+}
+
+/* ------------------------
+Main
+------------------------ */
+section {
+    width: 90%;
+    display: flex;
+    margin: 24px auto;
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 30px auto 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main p {
+    font-size: 16px;
+    font-weight: normal;
+}
+/* ------------------------
+Formulaire
+------------------------ */
+form {
+    margin: 10px 0;
+    display: flex;
+}
+
+.formFilter {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#iconForm {
+    background-color: #F2F2F2;
+    padding: 16px 20px;
+    border-radius: 16px 0 0 16px;
+}
+
+input[type="text"] {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 16px 20px;
+    width: 235px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+button {
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    padding: 16px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.iconButton i {
+    display: none;
+}
+
+.ref::before {
+    content: "Rechercher ";
+  }
+
+/* ------------------------
+Filtre
+------------------------ */
+#filter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 16px 0;
+}
+
+#filter h2 {
+    align-self: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-right: 2.8%;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.filterItem {
+    border: 2px solid #D9D9D9;
+    margin-bottom: 8px;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    transition: 300ms;
+}
+
+.filterItem:hover {
+    cursor: pointer;
+    border: 2px solid #DEEBFF;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    transition: 300ms;
+}
+
+.iconFilter {
+    background-color: #DEEBFF;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: -2px;
+}
+
+.txtFilter {
+    font-weight: bold;
+    margin: 0 12px;
+    font-size: 18px;
+}
+
+.txtFilter span {
+    text-transform: uppercase;
+}
+
+.iconItem {
+    color: #0065FC;
+    text-align: center;
+    font-size: 19px;
+}
+
+.resultFilter {
+    display: flex;
+    align-items: center;
+}
+
+.iconResult {
+    height: 22px;
+    width: 22px;
+    border: solid 1px #D9D9D9;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.resultFilter p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+}
+
+/* ------------------------
+Hébergement Left
+------------------------ */
+.hebergement {
+    justify-content: space-between;
+}
+
+.sideTotal {
+    height: 626px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.sideLeft {
+    width: 65%;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.sideLeft h2 {
+    width: 100%;
+    font-size: 21px;
+    align-self: center;
+    min-width: 260px;
+    font-weight: 600;
+    /* règles normalize.css à modifier */
+    margin-block-start: 10px;
+    margin-block-end: 25px;
+}
+
+.hebergementItem {
+    height: 35%;
+    width: 30%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px #d5d3d3;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: 300ms;
+}
+
+.hebergementItem:hover {
+    box-shadow: 0px 0px 0px 3px #0065FC;
+    transition: 300ms;
+}
+
+.hebergementItem a {
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    transition: 300ms;
+}
+
+.hebergementItem a:hover {
+    color: #0065FC;
+    transition: 300ms;
+    box-shadow: none;
+}
+
+.hebergementItem img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    transition: 300ms;
+}
+
+.itemDescriptHeberg {
+    height: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding-left: 3px;
+}
+
+.itemDescriptHeberg h4 {
+    font-weight: 600;
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
+
+.itemDescriptHeberg p {
+    font-weight: normal;
+    margin: 0;
+    font-size: 13px;
+}
+
+.itemDescriptHeberg p strong{
+    font-weight: 600;
+}
+
+.itemDescriptHeberg .noteHeberge {
+    display: flex;
+}
+
+.notationLeft {
+    display: flex;
+}
+
+.blueStar {
+    color: #0065FC;
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.greyStar {
+    color: #F2F2F2;
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.btnPlus h3 {
+    font-size: 17px;
+    font-weight: 600;
+    /* règles normalize.css à supprimer */
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.btnPlus a {
+    text-decoration: none;
+    color: #000;
+    transition: 300ms;
+}
+
+.btnPlus a:hover {
+    color: #0065FC;
+    transition: 300ms;
+}
+
+/* ------------------------
+Hébergement Right
+------------------------ */
+.sideRight {
+    width: 32%;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.titreAside {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+
+.titreAside h2 {
+    font-weight: 600;
+    font-size: 21px;
+    /* règles normalize.css à supprimer */
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.popStar {
+    font-size: 20px;
+}
+
+.populaireItem {
+    width: 100%;
+    background-color: #fff;
+    height: 25%;
+    border-radius: 20px;
+    padding: 4px;
+    box-sizing: border-box;
+    display: flex;
+    box-shadow: 0px 0px 10px 1px #d5d3d3;
+    transition: 300ms;
+    flex-direction: row;
+}
+
+.populaireItem:hover {
+    box-shadow: 0px 0px 0px 3px #0065FC;
+    transition: 300ms;
+}
+
+.populaireItem a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    width: 100%;
+}
+
+.populaireItem a:hover {
+    text-decoration: none;
+    color: #0065FC;
+    transition: 300ms;
+}
+
+.populaireItem img {
+    border-radius: 20px 0px 0px 20px;
+    width: 42%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemDescriptPop {
+    margin-left: 4%;
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.itemDescriptPop h4 {
+    font-weight: 600;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.itemDescriptPop p {
+    font-weight: normal;
+    margin: 0;
+    font-size: 13px;
+}
+
+.itemDescriptPop p strong {
+    font-weight: 600;
+}
+
+.notationRight {
+    display: flex;
+    height: 45%;
+    align-items: self-end;
+}
+
+/* ------------------------
+Activités
+------------------------ */
+.activite {
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+.activite h2 {
+    font-weight: 600;
+    margin: 0px 0 25px 0;
+    font-size: 21px;
+}
+
+.cardActiviteContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 30px;
+}
+
+.cardFullContent {
+    display: flex;
+    width: 295px;
+    justify-content: space-between;
+}
+
+.cardMediumContent {
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* full card */
+.fullCardItem {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px #eee;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.fullCardItem:hover {
+    box-shadow: 0px 5px 10px 2px #ccc;
+    transition: 300ms;
+}
+
+.fullCardItem a {
+    text-decoration: none;
+    color: #000;
+    transition: 300ms;
+}
+
+.fullCardItem a:hover {
+    color: #0065FC;
+    transition: 300ms;
+}
+
+.fullCardItem figure {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.fullCardItem figure img {
+    height: 385px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fullCardItem figcaption {
+    background-color: #fff;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 13px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* medium card */
+.mediumCardItem {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px #eee;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.mediumCardItem:hover {
+    box-shadow: 0px 5px 10px 2px #ccc;
+    transition: 300ms;
+}
+
+.mediumCardItem a {
+    text-decoration: none;
+    color: #000;
+    transition: 300ms;
+}
+
+.mediumCardItem a:hover {
+    text-decoration: none;
+    color: #0065FC;
+    transition: 300ms;
+}
+
+.mediumCardItem figure {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.mediumCardItem figure img {
+    height: 176px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mediumCardItem figcaption {
+    background-color: #fff;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* small card */
+.smallCardItem {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px #eee;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.smallCardItem:hover {
+    box-shadow: 0px 5px 10px 2px #ccc;
+    transition: 300ms;
+}
+
+.smallCardItem a {
+    text-decoration: none;
+    color: #000;
+    transition: 300ms;
+}
+
+.smallCardItem a:hover {
+    text-decoration: none;
+    color: #0065FC;
+    transition: 300ms;
+}
+
+.smallCardItem figure {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.smallCardItem figure img {
+    height: 105px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.smallCardItem figcaption {
+    background-color: #fff;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* ------------------------
+Footer
+------------------------ */
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.footerWidth {
+    flex-direction: row;
+}
+
+.footerItem {
+    width: 33.333333%;
+}
+
+.footerItem ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerItem li h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.footerItem ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000;
+    transition: 300ms;
+}
+
+.footerItem ul li a:hover {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 34px;
+    color: #0065FC;
+    transition: 300ms;
+}
